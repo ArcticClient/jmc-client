@@ -1,4 +1,4 @@
-## JMC client scripts for ArcticMUD
+# JMC client scripts for ArcticMUD
 Welcome to Arctic and enjoy your stay.
 
 Arctic has now been updated to use full ANSI coloring. TinTin++ and JMC are
@@ -21,9 +21,8 @@ trigger takes depends on your class. If you play a class that can make use of
 this trigger and you would like to have it enabled, remove the #nop comment 
 from the appropriate line in the JMC_Arctic_Actions file.
 
-## How to use
-#** WARNING ** 
-If you are already using JMC, this will replace your current setup.
+# How to use  
+### WARNING: If you are already using JMC, this will replace your current setup.
 
 1. Update JMC to the latest version
    (https://github.com/konelav/jmc/releases/)
@@ -65,28 +64,38 @@ These are:
       - This will send the commands to both windows
 
 Examples:
+```
 say Hello sir!
 Window says "Hello sir!"
+```
 
+```
 t say How are you today?
 Window 2 says "How are you today?"
+```
 
+```
 f say I'm doing fine, thanks.
 Window 1 AND Window 2 say "I'm doing fine, thanks."
+```
 
 # Creating your own triggers, aliases, highlights, and substitutions
 
 SYNTAX:
 |Alias|#alias  {keyword} {output text}|
+|-----|-------------------------------|
 |Example|#alias  {mm} {cast 'magic missile'}|
 
 |Trigger|#action {line to trigger} {what you want to do}|
+|-------|-----------------------------------------------|
 |Example|#action {^There were %0 coins.}  {get all.coins corpse}|
 
 |Substitutions|#sub {line to substitute} {replacement message}|
+|-------------|-----------------------------------------------|
 |Example|#sub {You eat some bread} {You eat some gnome.}|
 
 |Highlights|#highlight {color} {Line to highlight}|
+|----------|--------------------------------------|
 |Example|#highlight {cyan} {You have been blinded! %1}|
 
 If there are aliases, triggers, substitutions, or highlights you do NOT
