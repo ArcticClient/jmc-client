@@ -1,0 +1,59 @@
+#nop Generic triggers. Automatic eat/drink, tick resets, coin loot and split, stand when bashed
+#action {^You are thirsty.}                                                  {drink all}
+#action {^You are hungry. }                                                  {eat all}
+#nop Memorization messages of different classes, both yourself and others.
+#action {^Your studies complete, you close your spellbook with a smile.}     {#tickset 61;stand}
+#action {^Your meditation finished, you put away your charms with a smile.}  {#tickset 61;stand} 
+#action {^Your studies complete, you close your prayerbook with a smile.}    {#tickset 61;stand}
+#action {^Your studies complete, you put away your tablets with a smile.}    {#tickset 61;stand}
+#action {^%0 closes her spellbook with a content look on her face.}          {#tickset 61}
+#action {^%0 closes his spellbook with a content look on her face.}          {#tickset 61}
+#action {^%0 puts away his tablets with a content look on his face.}         {#tickset 61}
+#action {^%0 puts away her tablets with a content look on his face.}         {#tickset 61}
+#action {^%0 closes his prayerbook with a content look on his face.}         {#tickset 61}
+#action {^%0 closes her prayerbook with a content look on his face.}         {#tickset 61}
+#action {^%0 smiles as he finishes his meditation.}                          {#tickset 61}
+#action {^%0 smiles as she finishes her meditation.}                         {#tickset 61}
+#nop Optional tell to group to let them know the tick is coming
+#nop #action {^#10 seconds till TICK}                                        {gt tick in ten!!!}
+#nop Reconnect to server on disconnect.
+#action {^#Connection lost.}                                                 {#connect mud.arctic.org 2700}
+#nop This trigger loots coins from the most recent corpse.
+#action {^%0 is dead!}                                                       {get coins corpse}
+#nop This trigger splits coins that you pick up.
+#nop **WARNING** Getting coins from a container will cause this trigger to fire.
+#action {^There were %0 coins.}                                              {split %0}
+#nop Loss of fly spell on your character.
+#action {^You feel much heavier.}                                            {fly;fly}
+#nop This message is received when bashed.
+#action {^You are sent sprawling as %0 crashes into you.}                    {stand}
+#nop This message is received when charged and put into sitting position.
+#action {^%0 charges into you and knocks you to the ground.}                 {stand}
+#nop This message is received when charged and put into sitting position (alternate messaging).
+#action {^%0 swings madly at you with %1, knocking you to the ground.}       {stand}
+#nop This message is received when put into sitting position and lagged by the earthquake spell.
+#action {^You are thrown to the ground by the force of the earthquake.}      {stand}
+#nop This message is received when you are not delayed by a skill and have been able to stand up for a complete round.
+#action {^You should probably stand up!}                                     {cancel;stand}
+#nop **WARNING** This is the same message you would receive if someone who is trying to kill you is summoning you.
+#action {^%0 has summoned you!}                                              {wake;stand;fly}
+#nop The list of the following are auto-refill water container triggers for all the main towns in the game.
+#action {^A clan fountain is here.}                                          {fill all fountain}
+#action {^An old drinking well stands in the middle of the well house.}      {fill all well}
+#action {^The great fountain of old Tarsis stands here.}                     {fill all fountain}
+#action {^A white marble fountain spring is in the middle of the clearing.}  {fill all fountain}
+#action {^A large fountain sits in the middle of the road, taking up space.} {fill all fountain}
+#action {^Water flows out of a white marble fountain here.}                  {fill all fountain}
+#action {^In the center of the square is a carved marble fountain.}          {fill all fountain}
+#action {^A large copper fountain dominates the center of park square.}      {fill all fountain}
+#action {^A large pump and catchment basin is here.}                         {fill all basin}
+
+#nop Enable the appropriate refresh trigger for your class
+#nop Druid
+#nop #action {^%0 pants heavily.}                                            {cast 'refresh' %0}
+#nop Mountain scout
+#nop #action {^%0 pants heavily.}                                            {endurance %0}
+#nop Sky scout
+#nop #action {^%0 pants heavily.}                                            {flap %0}
+#nop Ocean scout
+#nop #action {^%0 pants heavily.}                                            {surge %0}

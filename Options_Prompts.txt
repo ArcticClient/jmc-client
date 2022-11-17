@@ -1,0 +1,5 @@
+#nop Always shows your current position (resting, standing, sleeping, sitting)
+PROMPT POSITION
+
+#nop Sets maximum amount of lines you can receive before hitting the message "[return for more, q to stop]" (you will only see this typing NEWS)
+OPT LINES 300

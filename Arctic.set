@@ -1,0 +1,32 @@
+#message uses OFF
+#multiaction off
+#multihighlight off
+#presub on
+#echo off
+#ignore off
+#speedwalk on
+#togglesubs off
+#verbat off
+#colon leave
+#comment #
+#race format %0
+#proxy {disable}
+#secure {disable}
+#codepage {iso-8859-1}
+#telnet {debug} {off}
+#oob {GMCP} {disable}
+#oob {MSDP} {disable}
+#oob {MSSP} {disable}
+#broadcast {filterip} {on}
+#broadcast {filterport} {on}
+#broadcast {port} {8136}
+#broadcast {enable}
+#promptend {disable}
+
+#alias {a1} {#connect mud.arctic.org 2700}
+#read JMC_Arctic_Actions.txt
+#read Arctic_Aliases.txt
+#read JMC_Arctic_Highlights_Subs.txt
+
+#group local default
+#ticksize 61

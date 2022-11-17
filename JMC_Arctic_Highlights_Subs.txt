@@ -1,0 +1,83 @@
+#nop Generic highlights (disarms, enlightens, re-cast spells)
+#highlight {magenta}     {--- YOU HAVE BEEN DISARMED. GET YOUR WEAPON AND WIELD ---}
+#nop You've disrupted your casting but can try again.
+#highlight {magenta}     {Your casting is disrupted by the fighting!}
+#nop You've disrupted your casting and will lose one round of gameplay.
+#highlight {magenta}     {You lost your concentration!}
+#nop Healing Cloud spell's duration has run out.
+#highlight {magenta}     {The cloud of light blinks one last time and then fades away.}
+#nop Your medal has gained affinity experience.
+#highlight {magenta}     {A gleaming silver medal warms up briefly, then cools down.}
+#nop Omen spell duration has run out.
+#highlight {magenta}     {Your premonition of the future fades.}
+#nop Regenerate spell duration has run out.
+#highlight {magenta}     {Your wounds stop healing.}
+#nop You have gained knowledge the skill causing this message.
+#highlight {cyan}        {You feel enlightened.}
+#nop You are ready to learn the skill causing this message.
+#highlight {cyan}        {You feel especially skillful today.}
+#nop Healing Wave spell duratio has run out.
+#highlight {magenta}     {Your body stops tingling.}
+#highlight {magenta}     {%0 has summoned you!}
+#nop A good hit.
+#highlight {red}         {You massacre %0 with your %1.}
+#nop More damage than massacre.
+#highlight {cyan}        {You annihilate %0 with your %1.}
+#nop More damage than annihilate.
+#highlight {blue}        {You obliterate %0 with your %1.}
+#nop More damage than obliterate. You won't see these very often unless they're coming from dragons.
+#highlight {magenta}     {You mutilate %0 with your %1.}
+
+#nop Dispellable negative affects affecting you or others
+#nop Curse spell - negated by Remove Curse spell of equal or greater level
+#highlight {cyan}        {You feel very uncomfortable.}
+#nop Ancient Curse spell - negated by Remove Curse spell of equal or greater level
+#highlight {cyan}        {You feel extremely uncomfortable.}
+#nop Charm and Mind Control spells - negated by Dispel Magic
+#highlight {cyan}        {You fall under the influence of %0's magic.}
+#nop Entangle spell - negated by Free Action spell
+#highlight {cyan}        {You become entangled in the vines!}
+#highlight {cyan}        {%0 becomes entangled in the vines!}
+#nop Web spell - negated by Free Action spell
+#highlight {cyan}        {%0 throws webbing all over you!}
+#nop Blind and Sunray spells - negated by Cure Blind spell
+#highlight {cyan}        {%0 seems to be blinded!}
+#highlight {cyan}        {You have been blinded!}
+#nop Hold Person spell, Ice Storm spell, Zap skill - negated by Free Action spell
+#highlight {cyan}        {%0 freezes in place.}
+#highlight {cyan}        {You freeze in place, unable to move.}
+#nop Paralysis spell - negated by Free Action spell
+#highlight {cyan}        {Your limbs freeze in place!}
+#highlight {cyan}        {%0 is paralyzed!}
+#nop Feeblemind spell - negated by Heal spell
+#highlight {cyan}        {You feel your mind slip away.}
+
+#nop "Undispellable" loss of character usage or ability
+#nop Feeblemind after-effect. You have to re-memorize some of your spellbook at random.
+#highlight {yellow}      {You forgot something!}
+#nop Caused by Punch, Ram instinct (headbutt)
+#highlight {yellow}      {Your eyes cross and you stumble back.}
+#nop Caused by Throat Punch skill
+#highlight {yellow}      {Your larynx collapses, speaking will be difficult.}
+#nop Caused by Silence spell
+#highlight {yellow}      {You suddenly lose all feeling of your mouth and tongue.}
+#highlight {yellow}      {%0 suddenly becomes very quiet.}
+#nop Caused by Bash skill
+#highlight {yellow}      {You are sent sprawling as %0 crashes into you.}
+#nop Caused by Avenging Faith skill
+#highlight {yellow}      {%0 forces you to the ground.}
+#nop Caused by Worg instinct (Thrash)
+#highlight {yellow}      {%0 gives you a good thrashing, forcing you to the ground.}
+#nop Caused by Charge skill
+#highlight {yellow}      {%0 charges into you and knocks you to the ground.}
+#highlight {yellow}      {%0 swings madly at you with %1, knocking you to the ground.}
+#nop Caused by Earthquake spell
+#highlight {yellow}      {You are thrown to the ground by the force of the earthquake.}
+#nop Caused by Power Word Stun, Nightmare (Nightmare is slightly different, but for all intents and purposes you can assume you're stunned)
+#highlight {yellow}      {--- YOU ARE STUNNED! ---}
+
+#nop Substitute messaging to ensure you see these important lines
+#sub {%0 disarms your weapon.}                                        {--- YOU HAVE BEEN DISARMED. GET YOUR WEAPON AND WIELD ---}
+#sub {%0 forces you to drop your weapon.}                             {--- YOU HAVE BEEN DISARMED. GET YOUR WEAPON AND WIELD ---}
+#sub {You succumb to the nightmare and fall into a deep, dark sleep.} {--- YOU ARE STUNNED! ---}
+#sub {You fall down, your ears ringing.}                              {--- YOU ARE STUNNED! ---}

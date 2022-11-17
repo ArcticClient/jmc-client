@@ -1,0 +1,308 @@
+#nop Generic
+#alias {brewscribe} {rest;brew 'cure light';scribe 'cu l';stand}
+#alias {comp}       {get all.component;put all.component pouch}
+#alias {lootall}    {get all corpse;get all 2.corpse;get all 3.corpse;get all 4.corpse}
+
+#nop Black Robe
+#alias {ab}         {cast 'acid blast'}
+#alias {abu}        {cast 'acid burn'}
+#alias {blr}        {cast 'black rune'}
+#alias {blur}       {cast 'blur'}
+#alias {calm}       {cast 'calm'}
+#alias {cold}       {cast 'cold snap'}
+#alias {constrict}  {cast 'constrict heart'}
+#alias {cont}       {cast 'continual light'}
+#alias {darka}      {cast 'dark acc'}
+#alias {dd}         {cast 'dimension door'}
+#alias {detinv}     {cast 'detect invisibility'}
+#alias {dm}         {cast 'dispel magic'}
+#alias {edrain}     {cast 'energy drain'}
+#alias {fa}         {cast 'free action'}
+#alias {flesh}      {cast 'flesh shield'}
+#alias {fluke}      {cast 'fluke'}
+#alias {ffly}       {cast 'fly'}
+#alias {float}      {cast 'floating disc'}
+#alias {gust}       {cast 'gust of wind'}
+#alias {hm}         {cast 'hold monster'}
+#alias {ii}         {cast 'improved invisibility'}
+#alias {inv}        {cast 'invisibility'}
+#alias {lb}         {cast 'lightning bolt'}
+#alias {loc}        {cast 'locate object'}
+#alias {ma}         {cast 'mental acui'}
+#alias {mist}       {cast 'acid mist'}
+#alias {mm}         {cast 'magic missile'}
+#alias {nm}         {cast 'nightmare'}
+#alias {pain}       {cast 'pain'}
+#alias {relo}       {cast 'relocate'}
+#alias {rend}       {cast 'rend'}
+#alias {rep}        {cast 'repose'}
+#alias {sg}         {cast 'shocking grasp'}
+#alias {shield}     {cast 'shield'}
+#alias {sil}        {cast 'silence'}
+#alias {sin}        {cast 'sinister barrage'}
+#alias {siphon}     {cast 'siphon magic'}
+#alias {stasis}     {cast 'stasis'}
+#alias {str}        {cast 'strength'}
+#alias {tele}       {cast 'teleport'}
+#alias {ten}        {cast 'tenebrous orb'}
+#alias {tent}       {cast 'malevolent tentacles'}
+#alias {vit}        {cast 'vitriolic shield'}
+#alias {web}        {cast 'web'}
+#alias {wb}         {cast 'water breath'}
+#alias {wrap}       {cast 'shadow wrap'}
+
+#nop Cleric
+#alias {aid}        {cast 'aid'}
+#alias {bl}         {cast 'blind'}
+#alias {bless}      {cast 'bless'}
+#alias {cloak}      {cast 'cloak of bravery'}
+#alias {crit}       {cast 'cure critical'}
+#alias {cub}        {cast 'cure blindness'}
+#alias {cul}        {cast 'cure light'}
+#alias {cus}        {cast 'cure serious'}
+#alias {crit}       {cast 'cure critical'}
+#alias {dark}       {cast 'darkness'}
+#alias {dm}         {cast 'dispel magic'}
+#alias {fa}         {cast 'free action'}
+#alias {flam}       {cast 'flamestrike'}
+#alias {gust}       {cast 'gust of wind'}
+#alias {harm}       {cast 'harm'}
+#alias {heal}       {cast 'heal'}
+#alias {hero}       {cast 'heroism'}
+#alias {hmi}        {cast 'healing mist'}
+#alias {holy}       {cast 'holy word'}
+#alias {prayer}     {cast 'prayer'}
+#alias {remp}       {cast 'remove pois'}
+#alias {restore}    {cast 'restore strength'}
+#alias {sanc}       {cast 'sanctuary'}
+#alias {sil}        {cast 'silence'}
+#alias {sunb}       {cast 'sunbolt'}
+#alias {sunr}       {cast 'sunray'}
+#alias {word}       {cast 'word of recall'}
+
+#nop Dark Knight
+#alias {aid}        {cast 'aid'}
+#alias {bl}         {cast 'blind'}
+#alias {dark}       {cast 'darkness'}
+#alias {db}         {cast 'dark blessing'}
+#alias {dm}         {cast 'dispel magic'}
+#alias {fa}         {cast 'free action'}
+#alias {feeble}     {cast 'feeblemind'}
+#alias {imp}        {cast 'impunity'}
+#alias {nf}         {cast 'nightfall'}
+#alias {nv}         {cast 'nightvision'}
+#alias {shad}       {cast 'cloak of shadows'}
+#alias {soull}      {cast 'soul leech'}
+#alias {uaura}      {cast 'unholy aura'}
+#alias {unh}        {cast 'unholy might'}
+#alias {soul}       {cast 'soul protection'}
+#alias {wrath}      {cast 'unholy wrath'}
+#alias {sum}        {cast 'summon dragon'}
+
+#nop Druid
+#alias {bar}        {cast 'barrier'}
+#alias {bark}       {cast 'bark skin'}
+#alias {bh}         {cast 'burning hands'}
+#alias {blur}       {cast 'blur'}
+#alias {calm}       {cast 'calm'}
+#alias {ck}         {cast 'cloud kill'}
+#alias {cone}       {cast 'cone of cold'}
+#alias {conj}       {cast 'conjure elemental'}
+#alias {const}      {cast 'constant winds'}
+#alias {crit}       {cast 'cure critical'}
+#alias {cu}         {cast 'cultivate'}
+#alias {cul}        {cast 'cure light'}
+#alias {cus}        {cast 'cure serious'}
+#alias {crit}       {cast 'cure critical'}
+#alias {earth}      {cast 'earthquake'}
+#alias {ef}         {cast 'elemental fist'}
+#alias {enl}        {cast 'enlarge'}
+#alias {entangle}   {cast 'entangle'}
+#alias {fa}         {cast 'free action'}
+#alias {fea}        {cast 'feast'}
+#nop Dropping the grapes ensures the elemental doesn't dispel itself
+#alias {feacu}      {fea;order all.elemental get all vine;order all.elemental drop all.grapes;order all.elemental eat all}
+#alias {ff}         {cast 'faerie fire'}
+#alias {ffly}       {cast 'fly'}
+#alias {fire}       {cast 'fire storm'}
+#alias {gran}       {cast 'granite hand'}
+#alias {ice}        {cast 'ice storm'}
+#alias {ices}       {cast 'iceshield'}
+#alias {iceskin}    {cast 'iceskin'}
+#alias {ls}         {cast 'lightning storm'}
+#alias {massfly}    {cast 'mass fly'}
+#alias {mr}         {cast 'mass refresh'}
+#alias {para}       {cast 'paralysis'}
+#alias {pfg}        {cast 'protection from good'}
+#alias {primal}     {cast 'primal fury'}
+#alias {ref}        {cast 'refresh'}
+#alias {remp}       {cast 'remove pois'}
+#alias {resist}     {cast 'resist'}
+#alias {sf}         {cast 'summon faerie'}
+#alias {sil}        {cast 'silence'}
+#alias {stone}      {cast 'stone skin'}
+#alias {storm}      {cast 'storm call'}
+#alias {strat}      {cast 'stratification'}
+#alias {swarm}      {cast 'insect swarm'}
+#alias {temp}       {cast 'temporal path'}
+#alias {tornado}    {cast 'tornado'}
+#alias {ts}         {cast 'thorn spray'}
+#alias {veil}       {cast 'veil of ice'}
+#alias {wb}         {cast 'water breath'}
+#alias {wind}       {cast 'prevailing winds'}
+#alias {word}       {cast 'word of recall'}
+
+#nop Paladin
+#alias {abso}       {cast 'absolution'}
+#alias {arms}       {cast 'holy arms'}
+#alias {aura}       {cast 'aura of glory'}
+#alias {bless}      {cast 'bless'}
+#alias {crus}       {cast 'crusade'}
+#alias {cul}        {cast 'cure light'}
+#alias {cum}        {cast 'cure malefaction'}
+#alias {cus}        {cast 'cure serious'}
+#alias {datn}       {cast 'defense against the night'}
+#alias {di}         {cast 'divine intervention'}
+#alias {elix}       {cast 'sum elixir'}
+#alias {exo}        {cast 'exorcism'}
+#alias {freedom}    {cast 'freedom'}
+#alias {hq}         {cast 'holy quest'}
+#alias {mental}     {cast 'mental haze'}
+#alias {pray}       {cast 'high prayer'}
+#alias {restore}    {cast 'restore strength'}
+#alias {ri}         {cast 'righteous indignation'}
+#alias {sanc}       {cast 'sanctuary'}
+#alias {sancti}     {cast 'sanctify ground'}
+#alias {vis}        {cast 'holy vision'}
+
+#nop Red Robe
+#alias {ab}         {cast 'acid blast'}
+#alias {ams}        {cast 'antimagic shell'}
+#alias {blast}      {cast 'blastwave'}
+#alias {blur}       {cast 'blur'}
+#alias {calm}       {cast 'calm'}
+#alias {cl}         {cast 'chain lightning'}
+#alias {cold}       {cast 'cold snap'}
+#alias {cont}       {cast 'continual light'}
+#alias {dd}         {cast 'dimension door'}
+#alias {detinv}     {cast 'detect invisibility'}
+#alias {dm}         {cast 'dispel magic'}
+#alias {dpm}        {cast 'displacement'}
+#alias {fa}         {cast 'free action'}
+#alias {fb}         {cast 'force bolt'}
+#alias {feeble}     {cast 'feeblemind'}
+#alias {ffly}       {cast 'fly'}
+#alias {float}      {cast 'floating disc'}
+#alias {fm}         {cast 'force missile'}
+#alias {gust}       {cast 'gust of wind'}
+#alias {hm}         {cast 'hold monster'}
+#alias {ii}         {cast 'improved invisibility'}
+#alias {inv}        {cast 'invisibility'}
+#alias {lb}         {cast 'lightning bolt'}
+#alias {lit}        {cast 'lightning shield'}
+#alias {loc}        {cast 'locate object'}
+#alias {ma}         {cast 'mental acui'}
+#alias {massinv}    {cast 'mass invisibility'}
+#alias {mgb}        {cast 'minor globe of invulnerability'}
+#alias {mirror}     {cast 'mirror image'}
+#alias {mm}         {cast 'magic missile'}
+#alias {pot}        {cast 'potency'}
+#alias {relo}       {cast 'relocate'}
+#alias {rep}        {cast 'repose'}
+#alias {rm}         {cast 'read magic'}
+#alias {sb}         {cast 'shocking blast'}
+#alias {scry}       {cast 'detect scry'}
+#alias {sg}         {cast 'shocking grasp'}
+#alias {shield}     {cast 'shield'}
+#alias {sil}        {cast 'silence'}
+#alias {spheres}    {cast 'spheres of absorption'}
+#alias {str}        {cast 'strength'}
+#alias {tb}         {cast 'thunderbolt'}
+#alias {tele}       {cast 'teleport'}
+#alias {trap}       {cast 'spell trap'}
+#alias {web}        {cast 'web'}
+#alias {wb}         {cast 'water breath'}
+#alias {wizeye}     {cast 'wizard eye'}
+
+#nop Shaman
+#alias {amp}        {cast 'amplify spirit'}
+#alias {bb}         {cast 'boiling blood'}
+#alias {crit}       {cast 'cure critical'}
+#alias {cs}         {control spirit}
+#alias {cub}        {cast 'cure blindness'}
+#alias {cul}        {cast 'cure light'}
+#alias {cus}        {cast 'cure serious'}
+#alias {crit}       {cast 'cure critical'}
+#alias {dark}       {cast 'darkened soul'}
+#alias {eth}        {cast 'ethereal armor'}
+#alias {gb}         {cast 'ghost berries'}
+#alias {gs}         {cast 'ghostskin'}
+#alias {hb}         {cast 'heal boost'}
+#alias {hw}         {cast 'healing wave'}
+#alias {hr}         {cast 'regenerate' tank1}
+#alias {ht}         {cast 'regenerate' tank2}
+#alias {lc}         {cast 'last chance'}
+#alias {monstrous}  {cast 'monstrous mantle'}
+#alias {omen}       {cast 'omen'}
+#alias {reg}        {cast 'regenerate'}
+#alias {remp}       {cast 'remove pois'}
+#alias {rit}        {cast 'ritual voyage'}
+#alias {soul}       {cast 'soul protection'}
+#alias {soull}      {cast 'soul leech'}
+#alias {sub}        {cast 'sublime resistance'}
+#alias {tena}       {cast 'tenacious heart'}
+#alias {tf}         {cast 'twisted fate'}
+#alias {trans}      {cast 'transmogrify'}
+
+#nop White Robe
+#alias {ab}         {cast 'acid blast'}
+#alias {al}         {cast 'arcane lash'}
+#alias {blur}       {cast 'blur'}
+#alias {boon}       {cast 'boon'}
+#alias {boost}      {cast 'boost'}
+#alias {calm}       {cast 'calm'}
+#alias {cleanse}    {cast 'cleanse'}
+#alias {cold}       {cast 'cold snap'}
+#alias {cont}       {cast 'continual light'}
+#alias {cspray}     {cast 'color spray'}
+#alias {dbf}        {cast 'delayed blast fireball'}
+#alias {dd}         {cast 'dimension door'}
+#alias {detinv}     {cast 'detect invisibility'}
+#alias {dm}         {cast 'dispel magic'}
+#alias {dome}       {cast 'enigmatic dome'}
+#alias {ep}         {cast 'epiphany'}
+#alias {fa}         {cast 'free action'}
+#alias {ffly}       {cast 'fly'}
+#alias {float}      {cast 'floating disc'}
+#alias {fold}       {cast 'fold space'}
+#alias {fs}         {cast 'fireshield'}
+#alias {glit}       {cast 'glitterdust'}
+#alias {globe}      {cast 'globe of invulnerability'}
+#alias {gust}       {cast 'gust of wind'}
+#alias {hm}         {cast 'hold monster'}
+#alias {ign}        {cast 'ignite'}
+#alias {ii}         {cast 'improved invisibility'}
+#alias {inv}        {cast 'invisibility'}
+#alias {juke}       {cast 'juke'}
+#alias {lb}         {cast 'lightning bolt'}
+#alias {loc}        {cast 'locate object'}
+#alias {ma}         {cast 'mental acui'}
+#alias {mm}         {cast 'magic missile'}
+#alias {moc}        {cast 'moment of clarity'}
+#alias {pr}         {cast 'preservation'}
+#alias {prism}      {cast 'prismatic spray'}
+#alias {relo}       {cast 'relocate'}
+#alias {rep}        {cast 'repose'}
+#alias {sco}        {cast 'scorch'}
+#alias {sg}         {cast 'shocking grasp'}
+#alias {shard}      {cast 'shards of arcana'}
+#alias {shield}     {cast 'shield'}
+#alias {sil}        {cast 'silence'}
+#alias {slumber}    {cast 'slumber'}
+#alias {sphere}     {cast 'sphere of invisibility'}
+#alias {str}        {cast 'strength'}
+#alias {tele}       {cast 'teleport'}
+#alias {web}        {cast 'web'}
+#alias {wb}         {cast 'water breath'}
+#alias {wither}     {cast 'wither'}
+#alias {wr}         {cast 'white rune'}

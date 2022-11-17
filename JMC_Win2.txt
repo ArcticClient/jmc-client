@@ -1,0 +1,10 @@
+#broadcast {filterip} {on}
+#broadcast {filterport} {on}
+#broadcast {port} {8136}
+#broadcast {enable}
+#action TEXT {^$secretkw %0} {%0} {5} {default}
+#action TEXT {/^(?!Note|Intersection|Warning)(\^|\*\*|\*|<<|)([a-zA-z]+)(:\s|\ssays\s'|\stells you\s'|\sshouts\s'|\syells\s'|\swhispers to you,\s')(.+)/} {#broadcast send $outgoingkw INCOMING: $0$1$2$3} {5} {default}
+#variable {outgoingkw} {**XX}
+#variable {secretkw} {XX**}
+#alias {a1} {#connect mud.arctic.org 2700}
+#read Arctic.set
