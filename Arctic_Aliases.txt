@@ -101,7 +101,7 @@
 
 #nop Druid
 #alias {bar}        {cast 'barrier'}
-#alias {bark}       {cast 'bark skin'}
+#alias {bark}       {cast 'barkskin'}
 #alias {bh}         {cast 'burning hands'}
 #alias {blur}       {cast 'blur'}
 #alias {calm}       {cast 'calm'}
