@@ -1,6 +1,6 @@
 #nop Generic triggers. Automatic eat/drink, tick resets, coin loot and split, stand when bashed
 #action {^You are thirsty.}                                                  {drink all}
-#action {^You are hungry. }                                                  {eat all}
+#action {^You are hungry.}                                                  {eat all}
 #nop Memorization messages of different classes, both yourself and others.
 #action {^Your studies complete, you close your spellbook with a smile.}     {#tickset 61;stand}
 #action {^Your meditation finished, you put away your charms with a smile.}  {#tickset 61;stand} 
