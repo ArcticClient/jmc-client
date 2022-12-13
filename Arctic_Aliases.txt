@@ -88,7 +88,7 @@
 #alias {dm}         {cast 'dispel magic'}
 #alias {fa}         {cast 'free action'}
 #alias {feeble}     {cast 'feeblemind'}
-#alias {imp}        {cast 'impunity'}
+#alias {impu}        {cast 'impunity'}
 #alias {nf}         {cast 'nightfall'}
 #alias {nv}         {cast 'nightvision'}
 #alias {shad}       {cast 'cloak of shadows'}
