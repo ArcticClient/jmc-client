@@ -58,9 +58,9 @@ There are three different scenarios in which you can input commands.
 These are:
    1) Type normal text or a command
       - This will send the command to your first window
-   2) Start your command with "t" (not including the quotation marks)
+   2) Start your command with "y" (not including the quotation marks)
       - This will send the command to your second window
-   3) Start your command with "f" (not including the quotation marks)
+   3) Start your command with "v" (not including the quotation marks)
       - This will send the commands to both windows
 
 Examples:
@@ -70,12 +70,12 @@ Window says "Hello sir!"
 ```
 
 ```
-t say How are you today?
+y say How are you today?
 Window 2 says "How are you today?"
 ```
 
 ```
-f say I'm doing fine, thanks.
+v say I'm doing fine, thanks.
 Window 1 AND Window 2 say "I'm doing fine, thanks."
 ```
 
