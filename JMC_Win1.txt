@@ -2,8 +2,8 @@
 #broadcast {filterport} {on}
 #broadcast {port} {8136}
 #broadcast {enable}
-#alias {f} {#broadcast send $secretkw %0;%0} {default}
-#alias {t} {#broadcast send $secretkw %0} {default}
+#alias {v} {#broadcast send $secretkw %0;%0} {default}
+#alias {y} {#broadcast send $secretkw %0} {default}
 #action TEXT {/^(?!Note|Intersection|Warning)(\^|\*\*|\*|<<|)([a-zA-z]+)(:\s|\ssays\s'|\stells you\s'|\sshouts\s'|\syells\s'|\swhispers to you,\s')(.+)/} {#output {$0$1$2$3}} {5} {default}
 #action TEXT {^$incomingkw INCOMING: %0} {#output {white} {Other char message: %0}} {5} {default}
 #variable {incomingkw} {**XX}
