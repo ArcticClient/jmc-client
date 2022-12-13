@@ -24,7 +24,7 @@
 #nop More damage than massacre.
 #highlight {cyan}        {You annihilate %0 with your %1.}
 #nop More damage than annihilate.
-#highlight {blue}        {You obliterate %0 with your %1.}
+#highlight {yellow}        {You obliterate %0 with your %1.}
 #nop More damage than obliterate. You won't see these very often unless they're coming from dragons.
 #highlight {magenta}     {You mutilate %0 with your %1.}
 
