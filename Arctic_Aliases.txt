@@ -56,7 +56,6 @@
 #alias {bl}         {cast 'blind'}
 #alias {bless}      {cast 'bless'}
 #alias {cloak}      {cast 'cloak of bravery'}
-#alias {crit}       {cast 'cure critical'}
 #alias {cub}        {cast 'cure blindness'}
 #alias {cul}        {cast 'cure light'}
 #alias {cus}        {cast 'cure serious'}
@@ -109,7 +108,6 @@
 #alias {cone}       {cast 'cone of cold'}
 #alias {conj}       {cast 'conjure elemental'}
 #alias {const}      {cast 'constant winds'}
-#alias {crit}       {cast 'cure critical'}
 #alias {cu}         {cast 'cultivate'}
 #alias {cul}        {cast 'cure light'}
 #alias {cus}        {cast 'cure serious'}
@@ -227,7 +225,6 @@
 #nop Shaman
 #alias {amp}        {cast 'amplify spirit'}
 #alias {bb}         {cast 'boiling blood'}
-#alias {crit}       {cast 'cure critical'}
 #alias {cs}         {control spirit}
 #alias {cub}        {cast 'cure blindness'}
 #alias {cul}        {cast 'cure light'}
